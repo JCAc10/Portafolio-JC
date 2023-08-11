@@ -1,0 +1,1 @@
+export {default as CertificationContent} from './CertificationContent'

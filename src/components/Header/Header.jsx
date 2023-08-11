@@ -1,66 +1,67 @@
-import { useState } from "react";
-import { Button, Image } from "react-bootstrap";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Nav, Image, Container, Navbar } from "react-bootstrap";
 
-const Header = () => {
-  const [activeItem, setActiveItem] = useState(0);
-  const [showNav, setShowNav] = useState(true);
+const NavbarHeader = () => {
 
-  const handleItemClick = (index) => {
-    setActiveItem(index);
-  };
+  const navigate = useNavigate();
 
-  const toggleNav = () => {
-    setShowNav(!showNav);
-  };
+ 
 
   return (
     <>
-      <nav className={`sidebar-navigation ${showNav ? "" : "hidden"}`}>
-        <ul className="p-0">
-          <li>
+      <Navbar expand="lg" variant="dark" className="sticky-top custom-navbar">
+        <Container>
+          <Navbar.Brand>
             <Image
               src="https://avatars.githubusercontent.com/u/133301187?v=4"
-              className="profile-image"
+              roundedCircle
+              width={50}
+              height={50}
             />
-          </li>
-          <li
-            className={activeItem === 0 ? "active" : ""}
-            onClick={() => handleItemClick(0)}
-          >
-            <ContentList icon="fa-solid fa-user" detail="ABOUT ME" />
-          </li>
-          <li
-            className={activeItem === 1 ? "active" : ""}
-            onClick={() => handleItemClick(1)}
-          >
-            <ContentList icon="fa-solid fa-code" detail="SKILLS" />
-          </li>
-          <li
-            className={activeItem === 2 ? "active" : ""}
-            onClick={() => handleItemClick(2)}
-          >
-            <ContentList icon="fa-solid fa-heart" detail="HOBBIES" />
-          </li>
-          <li
-            className={activeItem === 3 ? "active" : ""}
-            onClick={() => handleItemClick(3)}
-          >
-            <ContentList icon="fa-solid fa-graduation-cap" detail="EDUCATION" />
-          </li>
-          <li
-            className={activeItem === 4 ? "active" : ""}
-            onClick={() => handleItemClick(4)}
-          >
-            <ContentList icon="fa-solid fa-laptop-code" detail="PROJECTS" />
-          </li>
-        </ul>
-      </nav>
-
-      <Button className="toggle-button" variant="dark" onClick={toggleNav}>
-        {showNav ? 
-        <ContentList icon="fa-sharp fa-solid fa-arrow-left" detail="Ocultar"/>
-        : <i className="fa-sharp fa-solid fa-bars"></i>}
-      </Button>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto custom-nav">
+              <Nav.Link as={Link} to="/" onClick={() => navigate("")}>
+                <ContentList icon="fa-solid fa-play" detail="INICIO" />
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/AboutMe"
+                onClick={() => navigate("/AboutMe")}
+              >
+                <ContentList icon="fa-solid fa-user" detail="SOBRE MÍ" />
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/Skills"
+                onClick={() => navigate("/Skills")}
+              >
+                <ContentList icon="fa-solid fa-code" detail="SKILLS" />
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/Certification"
+                onClick={() => navigate("/Certification")}
+              >
+                <ContentList
+                  icon="fa-solid fa-graduation-cap"
+                  detail="RESUMEN"
+                />
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/Projects"
+                onClick={() => navigate("/Projects")}
+              >
+                <ContentList icon="fa-solid fa-laptop-code" detail="PROYECTOS" />
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 };
@@ -68,11 +69,9 @@ const Header = () => {
 const ContentList = ({ icon, detail }) => {
   return (
     <>
-      <i className={icon}></i>
-      <div className="info-icon text-center">{detail}</div>
-      <span className="tooltip">{detail}</span>
+      <i className={icon}></i> {detail}
     </>
   );
 };
 
-export default Header;
+export default NavbarHeader;

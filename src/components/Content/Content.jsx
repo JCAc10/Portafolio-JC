@@ -1,10 +1,13 @@
 import React from 'react'
+import AboutMe from "./AboutMe";
 
 const Content = () => {
   return (
-    <div className='p-5'>
-      Soy contenido
-    </div>
+    <>
+
+    <AboutMe></AboutMe>
+
+    </>
   )
 }
 
