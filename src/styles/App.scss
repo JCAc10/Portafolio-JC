@@ -76,16 +76,19 @@ body {
 
 .profession {
   font-size: 24px; // Ajusta el tamaño de fuente según tu preferencia
+  margin-bottom: 0;
 }
 
 .icons {
   a {
     color: white;
-  }
-
-  a:hover i {
-    color: rgb(40, 252, 234);
+    i {
+      transition: color 0.4s ease; /* Agrega una transición suave */
+      &:hover{
+        color: rgb(40, 252, 234);
     /* Cambia el color al hacer hover */
+      }
+    }
   }
 }
 
@@ -112,38 +115,13 @@ body {
 }
 
 span {
-  color: rgb(40, 192, 252);
+  color: rgb(75, 231, 236);
   font-weight: bold;
 }
-
 .item-list-tittle {
   color: rgb(79, 140, 253);
   margin-right: 10px;
   font-weight: bold;
-}
-
-.neon-border {
-  border: 2px solid rgb(40, 192, 252);
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(40, 192, 252, 0.8);
-  background-image: linear-gradient(to bottom, rgba(40, 192, 252, 0.05), rgba(40, 192, 252, 0.2));
-}
-
-.neon-border-r {
-  border: 2px solid rgb(252, 40, 40);
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(252, 118, 40, 0.8);
-  background-image: linear-gradient(to bottom, rgba(252, 118, 40, 0.05), rgba(252, 82, 40, 0.2));
-}
-
-.neon-border-g {
-  border: 2px solid rgb(40, 252, 58);
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(160, 252, 40, 0.8);
-  background-image: linear-gradient(to bottom, rgba(82, 252, 40, 0.05), rgba(153, 252, 40, 0.2));
 }
 
 .info-me {
@@ -172,28 +150,16 @@ span {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
 }
 
 .timeline-balloon {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 10px;
   position: relative;
   margin-left: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    border-style: solid;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
-    transform: translateY(-50%);
-  }
 }
 
 .timeline-dot {
@@ -493,3 +459,18 @@ span {
       display: none; /* Ocultar el pseudo-elemento en pantallas móviles */
     }
   }
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  height: 100%; /* Asegurarse de que ocupe toda la altura del Card.ImgOverlay */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Opacidad del fondo negro */
+}

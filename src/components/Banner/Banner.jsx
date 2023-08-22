@@ -1,21 +1,26 @@
-import { Container, Button, Image, Col, Row } from "react-bootstrap";
-import svgImg from "../../svg/mobile-app.svg";
+import { Container, Col, Row } from "react-bootstrap";
+import CV from "../../PDF/CV-JeanCarlosZamudioLabán.pdf";
 const Banner = () => {
   return (
     <>
       <Container className="p-4 my-lg-5 my-md-3">
-        <Row className="justify-content-md-center align-items-center" xs={1} md={1} sm={1} lg={2}>
+        <Row
+          className="justify-content-md-center align-items-center"
+          xs={1}
+          md={1}
+          sm={1}
+          lg={2}
+        >
           <Col className="d-flex flex-column justify-content-center align-items-center">
             <div className="text-center text-sm-start">
               <h1 className="title">Jean C. Zamudio</h1>
               <p className="profession">
                 Soy un <span>Ingeniero de Software</span> apasionado por la
-                programación. La creación de soluciones innovadoras es el
-                motor que impulsa cada línea que escribo.
-                {/*Mantengo mi mente abierta a las nuevas tecnologías, metodologías y tendencias, 
-              siempre listo para adoptar aquellas que puedan elevar mi trabajo al siguiente nivel.*/}
+                programación. La creación de soluciones innovadoras es el motor
+                que impulsa cada línea que escribo. <br/>
               </p>
               <div className="icons my-3">
+                <p className="profession">Puedes <span>contactarme</span> en:</p>
                 <a
                   href="https://github.com/JCAc10"
                   target="_blank"
@@ -31,20 +36,25 @@ const Banner = () => {
                   <i className="fa-brands fa-linkedin fa-2x p-3"></i>
                 </a>
                 <a
-                  href="mailto:jeanzamudio29@gmail.com"
+                  href="https://wa.me/51969754563"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-google fa-2x p-3"></i>
+                  <i className="fa-brands fa-whatsapp fa-2x p-3"></i>
                 </a>
               </div>
-              <Button variant="outline-info" onClick={handleDownloadPDF}>
+              <a
+                href={CV}
+                className="btn btn-outline-info"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Descargar CV
-              </Button>
+              </a>
             </div>
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
-          <Phone />
+            <Phone />
           </Col>
         </Row>
       </Container>
@@ -55,7 +65,7 @@ const Phone = () => {
   return (
     <div className="phone-container p-3">
       <div className="phone">
-        <div className="camera"></div> {/* Agrega la cámara */}
+        <div className="camera"></div>
         <div className="screen">
           <div className="content">
             <div className="content__container">
@@ -77,14 +87,4 @@ const Phone = () => {
     </div>
   );
 };
-const handleDownloadPDF = () => {
-  const link = document.createElement("a");
-  link.href = "../../PDF/CV-JeanCarlosZamudioLabán.pdf"; // Cambia esto por la ruta correcta de tu archivo PDF
-  link.download = "CV-JeanCarlosZamudioLabán.pdf"; // Cambia esto por el nombre que quieras para el archivo descargado
-  link.target = "_blank";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
-
 export default Banner;
