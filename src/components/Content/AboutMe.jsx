@@ -27,8 +27,8 @@ const AboutMe = () => {
               Entre mis objetivos está desempeñarme 
               como <span>Mobile Developer</span>.
             </p>
-            <div className="text-start data-me">
-             <ul>
+            <div className="text-start">
+             <ul className="data-me">
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Edad:</span>21 años</li> 
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Ciudad:</span>Lima, Perú</li> 
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Correo:</span>jeanzamudio29@gmail.com</li> 

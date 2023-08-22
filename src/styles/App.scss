@@ -123,10 +123,16 @@ span {
   margin-right: 10px;
   font-weight: bold;
 }
-
+.data-me{
+  padding-left: 0px;
+}
 .info-me {
   text-align: justify;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
 }
+
 /* Estilos para el timeline */
 .timeline-container {
   padding: 40px 0;
@@ -455,8 +461,10 @@ span {
     }
   }
   @media (max-width: 767px) {
-    .title-subtititel h2::before {
-      display: none; /* Ocultar el pseudo-elemento en pantallas móviles */
+    .title-subtititel {
+      h2::before {
+        display: none; /* Ocultar el pseudo-elemento en pantallas móviles */
+      }
     }
   }
 .card-content {

@@ -11,8 +11,8 @@ import ButtonModal from "./ButtonModal";
 const CertificationContent = () => {
   return (
     <>
-      <div className="title-subtititel my-3">
-        <h2>Resumen de estudios</h2>
+      <div className="title-subtititel">
+        <h2>Mis estudios</h2>
       </div>
       <Container className="p-4 my-4">
         <Row className="timeline-container justify-content-center">

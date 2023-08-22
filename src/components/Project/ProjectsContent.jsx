@@ -42,7 +42,7 @@ const ProjectsContent = () => {
           )}
           {renderCard(
             "SISTEMA DE ESCRITORIO - MANIPULACIÓN DE WORD",
-            "Realizado usando Visual Basic .NET, nos ayuda a crear un documento .docx, realizar la búsqueda de palabras, crear tablas simples, convertir a PDF y cargar documentos para su visualización",
+            "Realizado usando Visual Basic .NET, nos ayuda a crear un documento .docx, buscar palabras, crear tablas simples, convertir a PDF y visualizar .docx",
             VB_WORD,
             2,
             "https://www.youtube.com/watch?v=cuIk2U_bYTU",
@@ -83,7 +83,7 @@ const renderCard = (title, text, imageUrl, cardKey, videoId, github) => {
             <div className="card-content">
               <Card.Title>{title}</Card.Title>
               <Card.Text>{text}</Card.Text>
-              <div className="icons my-3">
+              <div className="icons my-lg-3 my-sm-0">
                 <a href={videoId} target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-youtube fa-2x px-3"></i>
                 </a>

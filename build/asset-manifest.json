@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.583f294e.css",
+    "main.js": "/static/js/main.a8924020.js",
+    "static/js/787.ae0d8d37.chunk.js": "/static/js/787.ae0d8d37.chunk.js",
+    "static/media/CERTIFICADO DOCKER.pdf": "/static/media/CERTIFICADO DOCKER.4fc23c0870432bcbfe16.pdf",
+    "static/media/CERTIFICADO ORACLE.pdf": "/static/media/CERTIFICADO ORACLE.e92f984276d2b78c199a.pdf",
+    "static/media/VB-NET_WORD.jpg": "/static/media/VB-NET_WORD.f33ceb9ad22bbe628b62.jpg",
+    "static/media/BlueSkyRestaurant-Fondo.jpg": "/static/media/BlueSkyRestaurant-Fondo.64971e702a55b6db52ef.jpg",
+    "static/media/CERTIFICADO INGLES A2.pdf": "/static/media/CERTIFICADO INGLES A2.2981e7998a7d0de8ae79.pdf",
+    "static/media/CERTIFICADO EXCEL INTERMEDIO.pdf": "/static/media/CERTIFICADO EXCEL INTERMEDIO.a7b3e375bfc34d2eb14c.pdf",
+    "static/media/Fastage-Fondo.jpg": "/static/media/Fastage-Fondo.64672eeea2c2631225bb.jpg",
+    "static/media/CV-JeanCarlosZamudioLabán.pdf": "/static/media/CV-JeanCarlosZamudioLabán.019df983f43d97099b07.pdf",
+    "static/media/BlueSkyTech-Fondo.jpg": "/static/media/BlueSkyTech-Fondo.746f4aa78ff3c50afe4e.jpg",
+    "static/media/Pixel-Z.jpg": "/static/media/Pixel-Z.46d7290a6c606b7dda04.jpg",
+    "static/media/CERTIFICADO CIBERSEGURIDAD - CISCO.pdf": "/static/media/CERTIFICADO CIBERSEGURIDAD - CISCO.9d7248712fb2df6562bd.pdf",
+    "static/media/CERTIFICADO PYTHON - CISCO.pdf": "/static/media/CERTIFICADO PYTHON - CISCO.cd027ffe84819a15ecd7.pdf",
+    "static/media/TB-APP-Fondo.jpg": "/static/media/TB-APP-Fondo.60ccbd49dd8745582f42.jpg",
+    "static/media/Plan_estudios_U19101557.pdf": "/static/media/Plan_estudios_U19101557.3c770484b398a2a40069.pdf",
+    "static/media/fondo5.jpg": "/static/media/fondo5.e14df13fb9fd06f30d16.jpg",
+    "index.html": "/index.html",
+    "main.583f294e.css.map": "/static/css/main.583f294e.css.map",
+    "main.a8924020.js.map": "/static/js/main.a8924020.js.map",
+    "787.ae0d8d37.chunk.js.map": "/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.583f294e.css",
+    "static/js/main.a8924020.js"
+  ]
+}
