@@ -80,8 +80,15 @@ body {
 }
 
 .icons {
+
+  .disabled {
+    pointer-events: none;
+    color: gray;
+    cursor: not-allowed;
+  }
   a {
     color: white;
+    
     i {
       transition: color 0.4s ease; /* Agrega una transición suave */
       &:hover{
@@ -183,22 +190,21 @@ span {
 .timeline-content {
   margin-left: 20px;
   flex: 1;
-  text-align: justify;
+  //text-align: justify;
+  h3 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
-.timeline-content h3 {
-  font-size: 20px;
-  margin-top: 0;
-}
 
-.timeline-content p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.timeline-content a {
-  text-decoration: none;
-}
 
 @media (max-width: 767px) {
   .timeline::before {
@@ -481,4 +487,103 @@ span {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Opacidad del fondo negro */
+}
+.card-style{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  height: 100%; /* Asegurarse de que ocupe toda la altura del Card.ImgOverlay */
+  .card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+    max-width: 400px;
+    display: flex;
+   
+    border-radius: 25px;
+    position: relative;
+  }
+  .card h2 {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .card .title {
+    padding: 1rem;
+    text-align: right;
+    color: #37138b;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .card .desc {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
+  .card .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .img-avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(-60deg, #8336db 0%, #3f42f4 100%);
+    top: 15px;
+    left: 85px;
+  }
+  .btn-outline-warning {
+    --bs-btn-color: #8336db;
+    --bs-btn-border-color: #8336db;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #8336db;
+    --bs-btn-hover-border-color: #8336db;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #8336db;
+    --bs-btn-active-border-color: #8336db;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #8336db;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #8336db;
+    --bs-gradient: none;
+}
+  .card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+  }
+  
+  path {
+    fill: white;
+  }
+  
+  
+  
+  .portada {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-image: url("../img/educacion.jpg");
+      background-position: bottom center;
+      background-size: cover;
+  }
+  .portada2 {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url("../img/cursos.jpg");
+    background-position: bottom center;
+    background-size: cover;
+}
+
 }

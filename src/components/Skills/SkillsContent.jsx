@@ -22,11 +22,11 @@ const Skills = () => {
               <p className="mb-0">Desarrollo Web</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="HTML" per={80} color="info" />,
-                  <ProgressBarData tittle="CSS" per={80} color="info" />,
-                  <ProgressBarData tittle="SCSS" per={80} color="info" />,
-                  <ProgressBarData tittle="JAVASCRIPT" per={80} color="info" />,
-                  <ProgressBarData tittle="PHP" per={80} color="info" />,
+                  <ProgressBarData tittle="HTML" per={80} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="CSS" per={80} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="SCSS" per={80} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="JAVASCRIPT" per={78} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="PHP" per={78} color="info" level="Intermedio"/>,
                 ]}
               />
             </div>
@@ -37,8 +37,8 @@ const Skills = () => {
               <p className="mb-0">Metodologías de trabajo</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="SCRUM" per={80} color="info" />,
-                  <ProgressBarData tittle="RUP" per={80} color="info" />,
+                  <ProgressBarData tittle="SCRUM" per={80} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="RUP" per={70} color="info" level="Intermedio"/>,
                 ]}
               />
             </div>
@@ -51,10 +51,10 @@ const Skills = () => {
               <p className="mb-0">Lenguajes de programación</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="JAVA" per={78} color="danger" />,
-                  <ProgressBarData tittle="PYTHON" per={68} color="danger" />,
-                  <ProgressBarData tittle="C#" per={68} color="danger" />,
-                  <ProgressBarData tittle="C++" per={68} color="danger" />,
+                  <ProgressBarData tittle="JAVA" per={78} color="danger" level="Intermedio"/>,
+                  <ProgressBarData tittle="C#" per={68} color="danger" level="Intermedio"/>,
+                  <ProgressBarData tittle="PYTHON" per={68} color="danger" level="Intermedio"/>,
+                  <ProgressBarData tittle=".NET" per={40} color="danger" level="Básico"/>,
                 ]}
               />
             </div>
@@ -65,12 +65,13 @@ const Skills = () => {
               <p className="mb-0">Gestor de base de datos</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="MySQL" per={78} color="warning" />,
-                  <ProgressBarData tittle="ORACLE" per={68} color="warning" />,
+                  <ProgressBarData tittle="MySQL" per={78} color="warning"  level="Intermedio"/>,
+                  <ProgressBarData tittle="ORACLE" per={68} color="warning" level="Intermedio"/>,
                   <ProgressBarData
                     tittle="MS SQL Server"
                     per={68}
                     color="warning"
+                    level="Intermedio"
                   />,
                 ]}
               />
@@ -84,19 +85,14 @@ const Skills = () => {
               <p className="mb-0">Frameworks</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="REACT" per={78} color="success" />,
-                  <ProgressBarData tittle="LARAVEL" per={68} color="success" />,
-                  <ProgressBarData tittle="FLUTTER" per={68} color="success" />,
-                  <ProgressBarData
-                    tittle="UNITY 2D"
-                    per={68}
-                    color="success"
-                  />,
+                  <ProgressBarData tittle="REACT" per={78} color="success" level="Intermedio"/>,
+                  <ProgressBarData tittle="UNITY 2D" per={68} color="success" level="Intermedio"/>,
+                  <ProgressBarData tittle="ASP .NET" per={50} color="success" level="Básico"/>,
                 ]}
               />
             </div>
           </Col>
-          <Col xs={12} lg={6} className="p-1">
+         {/* <Col xs={12} lg={6} className="p-1">
             <div className="interests icon-box">
             <i class="fa-solid fa-lightbulb" style={{ color: "#99FF66", fontSize: "28px" }}/>&nbsp;
               <p className="mb-0">IDEs</p>
@@ -120,19 +116,19 @@ const Skills = () => {
                 ]}
               />
             </div>
-          </Col>
+          </Col>*/}
         </Row>
       </Container>
     </>
   );
 };
 
-const ProgressBarData = ({ tittle, per, color }) => {
+const ProgressBarData = ({ tittle, per, color, level }) => {
   return (
     <div className="p-2">
       <div className="text-start">{tittle}:</div>
       <div className="text-end">
-        <i className="float-right">{per}%</i>
+        <i className="float-right">{level}</i>
       </div>
       <ProgressBar now={per} label={`${per}%`} visuallyHidden variant={color} />
     </div>

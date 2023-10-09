@@ -21,7 +21,7 @@ const ButtonModal = ({ title, icon, columna1, columna2 }) => {
           variant="outline-warning"
           onClick={() => handleOpenModal(columna1.concat(columna2))}
         >
-          {title} 
+          VER MÁS&nbsp; 
           <i className={icon}></i>
         </Button>
   

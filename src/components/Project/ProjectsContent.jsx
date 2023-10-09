@@ -37,7 +37,7 @@ const ProjectsContent = () => {
             "Desarrollado en Unity 2D, cuenta con sistema de vidas, disparos, puntaje, plataformas, multijugador y parallax",
             PixelZ,
             1,
-            "https://www.youtube.com/watch?v=cuIk2U_bYTU",
+            "https://youtu.be/Ip-0bYD16C4",
             "https://github.com/JCAc10/Unity2D-Pixel_Z"
           )}
           {renderCard(
@@ -45,8 +45,9 @@ const ProjectsContent = () => {
             "Realizado usando Visual Basic .NET, nos ayuda a crear un documento .docx, buscar palabras, crear tablas simples, convertir a PDF y visualizar .docx",
             VB_WORD,
             2,
-            "https://www.youtube.com/watch?v=cuIk2U_bYTU",
-            "https://github.com/JCAc10/WordManipulation_VB-.NET"
+            "",
+            "https://github.com/JCAc10/WordManipulation_VB-.NET",
+            "disabled"
           )}
         </Row>
         <Row>
@@ -55,16 +56,18 @@ const ProjectsContent = () => {
             "Implementado en Android Studio, cuenta con conexión a SQL Server, generación de QR y usa JSON para almacenar las preguntas",
             APP_TB,
             1,
-            "https://www.youtube.com/watch?v=cuIk2U_bYTU",
-            "https://github.com/JCAc10/appTablaPeriodica"
+            "",
+            "https://github.com/JCAc10/appTablaPeriodica",
+            "disabled"
           )}
           {renderCard(
             "SISTEMA DE WEB - RESTAURANTE BLUESKY",
             "Utilizando Java Servlets conectado a MySQL, simula un punto de ventas de hamburguesa con carrito de compras y reportes PDF",
             BlueSkyRestaurant,
             2,
-            "https://www.youtube.com/watch?v=cuIk2U_bYTU",
-            "https://github.com/JCAc10/proyectoRestaurante"
+            "",
+            "https://github.com/JCAc10/proyectoRestaurante",
+            "disabled"
           )}
         </Row>
       </Container>
@@ -72,7 +75,7 @@ const ProjectsContent = () => {
   );
 };
 
-const renderCard = (title, text, imageUrl, cardKey, videoId, github) => {
+const renderCard = (title, text, imageUrl, cardKey, videoId, github, status) => {
   return (
     <Col key={cardKey} xs={12} lg={6} className="p-2">
       <Card className="bg-dark text-white">
@@ -84,7 +87,7 @@ const renderCard = (title, text, imageUrl, cardKey, videoId, github) => {
               <Card.Title>{title}</Card.Title>
               <Card.Text>{text}</Card.Text>
               <div className="icons my-lg-3 my-sm-0">
-                <a href={videoId} target="_blank" rel="noopener noreferrer">
+                <a href={videoId} target="_blank" rel="noopener noreferrer" className={status}>
                   <i className="fa-brands fa-youtube fa-2x px-3"></i>
                 </a>
                 <a href={github} target="_blank" rel="noopener noreferrer">
