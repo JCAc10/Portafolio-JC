@@ -25,13 +25,13 @@ const AboutMe = () => {
               Me considero una persona responsable, que sabe lidiar con los problemas y hallar soluciones de manera efectiva y eficaz,
               soy resiliente, sé trabajar en equipo para lograr un trabajo en conjunto con resultados exitosos y sé aprender de mis errores.
               Entre mis objetivos está desempeñarme 
-              como <span>Mobile Developer</span>.
+              como <span>Desarrollador FullStack</span>.
             </p>
             <div className="text-start">
              <ul className="data-me">
-             <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Edad:</span>21 años</li> 
+             <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Edad:</span>22 años</li> 
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Ciudad:</span>Lima, Perú</li> 
-             <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Correo:</span>jeanzamudio29@gmail.com</li> 
+             <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Correo:</span>jeanzamudio56@gmail.com</li> 
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Teléfono:</span>+(51) 969754563</li> 
              <li className="my-2"><span className="item-list-tittle"><i class="fa-solid fa-chevrons-right"></i> Disponibilidad:</span>INMEDIATA</li> 
              </ul>

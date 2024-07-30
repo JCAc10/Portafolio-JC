@@ -22,10 +22,10 @@ const Skills = () => {
               <p className="mb-0">Desarrollo Web</p>
               <ButtonModal
                 content={[
-                  <ProgressBarData tittle="HTML" per={80} color="info" level="Intermedio"/>,
-                  <ProgressBarData tittle="CSS" per={80} color="info" level="Intermedio"/>,
-                  <ProgressBarData tittle="SCSS" per={80} color="info" level="Intermedio"/>,
-                  <ProgressBarData tittle="JAVASCRIPT" per={78} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="Angular" per={82} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="React" per={80} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="Node.js" per={75} color="info" level="Intermedio"/>,
+                  <ProgressBarData tittle="Express.js" per={68} color="info" level="Intermedio"/>,
                   <ProgressBarData tittle="PHP" per={78} color="info" level="Intermedio"/>,
                 ]}
               />
@@ -53,7 +53,7 @@ const Skills = () => {
                 content={[
                   <ProgressBarData tittle="JAVA" per={78} color="danger" level="Intermedio"/>,
                   <ProgressBarData tittle="C#" per={68} color="danger" level="Intermedio"/>,
-                  <ProgressBarData tittle="PYTHON" per={68} color="danger" level="Intermedio"/>,
+                  <ProgressBarData tittle="PYTHON" per={88} color="danger" level="Intermedio"/>,
                   <ProgressBarData tittle=".NET" per={40} color="danger" level="Básico"/>,
                 ]}
               />
@@ -67,11 +67,7 @@ const Skills = () => {
                 content={[
                   <ProgressBarData tittle="MySQL" per={78} color="warning"  level="Intermedio"/>,
                   <ProgressBarData tittle="ORACLE" per={68} color="warning" level="Intermedio"/>,
-                  <ProgressBarData
-                    tittle="MS SQL Server"
-                    per={68}
-                    color="warning"
-                    level="Intermedio"
+                  <ProgressBarData tittle="MS SQL Server" per={68} color="warning" level="Intermedio"
                   />,
                 ]}
               />

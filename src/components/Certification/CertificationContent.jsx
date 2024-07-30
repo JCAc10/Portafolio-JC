@@ -38,9 +38,9 @@ const CertificationContent = () => {
                         icon="fa-solid fa-user-graduate"
                         columna1={[
                           {
-                            year: "2019 - En curso",
+                            year: "2019 - 2024",
                             title: "UNIVERSIDAD TECNOLÓGICA DEL PERÚ (UTP)",
-                            desc: "Ingeniería de Software, estoy en 9no semestre y mi fecha de egreso aproximado es en Marzo del 2024",
+                            desc: "Egresado en Ingeniería de Software",
                             downloadUrl: AvanceUTP,
                           },
                           {
